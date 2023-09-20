@@ -34,7 +34,7 @@ try:
     content = result['msg']
     # 进行推送
     if SCKEY != '':
-        push_url = 'https://sctapi.ftqq.com/{}.send?title=ikuuu自动签到任务提示:{}&desp={}'.format(SCKEY, content,content)
+        push_url = 'https://sctapi.ftqq.com/{}.send?title=ikuuu{}&desp={}'.format(SCKEY, content,content)
         requests.post(url=push_url)
         print('推送成功')
 except:
